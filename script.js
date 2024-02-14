@@ -1,5 +1,5 @@
 // Initial counter value
-let counter = 9999;
+let counter = 999999;
 
 const DISPLAY = document.getElementById('display');
 
@@ -7,7 +7,7 @@ const DISPLAY = document.getElementById('display');
 const ALERT_EL = document.getElementById('alert');
 const ERROR_MSG_OUT_OF_MEMORY = 'Out of memory';
 const ERROR_MSG_INVALID_RANGE = 'Zero is the low limit';
- 
+
 // Function to update the display based on the counter value
 function updateDisplay() {
     const spanElements = DISPLAY.children;
@@ -27,24 +27,26 @@ function addBox() {
 
 // Function to handle incrementing the counter and updating the display
 function increment() {
-    const boxCount = DISPLAY.children.length; 
+    const boxCount = DISPLAY.children.length;
     counter++;
 
     // Increment the counter and add a box if needed
-    if (counter.toString().length > boxCount) {
+    if (counter.toString().length === 5 && boxCount === 4) {
+        addBox();
+    } else if (counter.toString().length === 6 && boxCount === 5) {
         addBox();
     } else if (counter.toString().length > 6) {
         ALERT_EL.innerText = ERROR_MSG_OUT_OF_MEMORY;
         return;
     }
-     // Clear any previous error messages and update the display
+    // Clear any previous error messages and update the display
     ALERT_EL.innerText = '';
     updateDisplay();
 }
 
 // Function to remove the last box from the displa
 function removeBox() {
-    const boxCount = DISPLAY.children.length; 
+    const boxCount = DISPLAY.children.length;
 
     // Remove the last box if there is at least one box
     if (boxCount > 0) {
@@ -57,13 +59,18 @@ function removeBox() {
 // Function to handle decrementing the counter and updating the display
 function decrement() {
     const boxCount = DISPLAY.children.length; // Define boxCount here
-    counter--;
     if (counter === 0) {
         ALERT_EL.innerText = ERROR_MSG_INVALID_RANGE;
         return
     };
-    if (counter.toString().length < boxCount) {
-        removeBox();
+    counter--;
+    if (counter.toString().length === 5 && boxCount === 6) {
+        addBox();
+    } else if (counter.toString().length === 4 && boxCount === 5) {
+        addBox();
+    } else if (counter.toString().length > 6) {
+        ALERT_EL.innerText = ERROR_MSG_OUT_OF_MEMORY;
+        return;
     }
     ALERT_EL.innerText = '';
     updateDisplay();
