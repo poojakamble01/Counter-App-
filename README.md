@@ -2,3 +2,8 @@
 ![Screenshot 2024-02-14 200957](https://github.com/poojakamble01/Counter-App-/assets/159807225/fa6e70b1-9a2b-454d-84e4-bc722a7eb332)
 ![Screenshot 2024-02-14 195830](https://github.com/poojakamble01/Counter-App-/assets/159807225/1e4d5a31-b94c-4f39-a02b-4f600a97d613)
 ![Screenshot 2024-02-14 201031](https://github.com/poojakamble01/Counter-App-/assets/159807225/9ef798f8-9999-4a0e-9b5a-da902d2e6575)
+![Screenshot 2024-02-15 081943](https://github.com/poojakamble01/Pure-JS-Counter-App/assets/159807225/5eaf616c-0d85-43f1-9638-00f965f4d0c4)
+![Screenshot 2024-02-15 081959](https://github.com/poojakamble01/Pure-JS-Counter-App/assets/159807225/a59aa772-5ecb-4741-b04d-5e44131fb3a3)
+![Screenshot 2024-02-15 082328](https://github.com/poojakamble01/Pure-JS-Counter-App/assets/159807225/f288727d-684b-4b47-b9de-89610c96dca4)
+![Screenshot 2024-02-15 082602](https://github.com/poojakamble01/Pure-JS-Counter-App/assets/159807225/e458c6da-9e9c-4df1-bf3b-f77275031046)
+![Screenshot 2024-02-15 082706](https://github.com/poojakamble01/Pure-JS-Counter-App/assets/159807225/f9b3aa85-8706-4880-9eff-4730955fc098)
