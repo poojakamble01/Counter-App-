@@ -47,13 +47,9 @@ function increment() {
 // Function to remove the last box from the displa
 function removeBox() {
     const boxCount = DISPLAY.children.length;
-
-    // Remove the last box if there is at least one box
-    if (boxCount > 0) {
-        const lastBox = DISPLAY.lastElementChild;
-        lastBox.parentNode.removeChild(lastBox);
+    const lastBox = DISPLAY.lastElementChild;
+    lastBox.parentNode.removeChild(lastBox);
     }
-}
 // Function to handle decrementing the counter and updating the display
 function decrement() {
     const boxCount = DISPLAY.children.length; // Define boxCount here
