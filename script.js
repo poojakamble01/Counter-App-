@@ -1,5 +1,5 @@
 // Initial counter value
-let counter = 999999;
+let counter = 9999;
 
 const DISPLAY = document.getElementById('display');
 
@@ -54,8 +54,6 @@ function removeBox() {
         lastBox.parentNode.removeChild(lastBox);
     }
 }
-
-
 // Function to handle decrementing the counter and updating the display
 function decrement() {
     const boxCount = DISPLAY.children.length; // Define boxCount here
@@ -65,9 +63,9 @@ function decrement() {
     };
     counter--;
     if (counter.toString().length === 5 && boxCount === 6) {
-        addBox();
+        removeBox();
     } else if (counter.toString().length === 4 && boxCount === 5) {
-        addBox();
+        removeBox();
     } else if (counter.toString().length > 6) {
         ALERT_EL.innerText = ERROR_MSG_OUT_OF_MEMORY;
         return;
@@ -75,13 +73,11 @@ function decrement() {
     ALERT_EL.innerText = '';
     updateDisplay();
 }
-
 // Function to reset button of the counter to zero and update the display
 function reset() {
     counter = 0;
     updateDisplay();
 }
-
 // Function to add padding to the start of a string
 function addPaddingAtStart(originalString, desiredLength, paddingCharacter) {
     const originalStringLength = originalString.length;
